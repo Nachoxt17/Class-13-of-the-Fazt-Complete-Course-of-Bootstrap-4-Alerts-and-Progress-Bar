@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <!--Agregando este Link de Abajo agregamos a Bootstrap 4 la Librería de FontAwesome, que sirve para Usar/Poner Íconos.-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <title>Bootstrap 4 Course Class 13 - Alerts and Progress Bar</title>
+        <!--Alertas y Barras de Progreso.-->
+</head>
+<body class="container">
+<!--Le colocamos al BODY la class="container"(Contendor) para poder usar dentro de él el Sistema de Cuadrículas(Grid System).-->
+<h1 class="h1">Alerts and Progress Bar with Bootstrap 4:_</h1>
+<!--.-->
+
+<hr class="bg-dark">
+
+<h1>Most Common Web Alert Windows. You can close them! They will reappear when you refresh The Web Page:_</h1>
+<!--Las Alertas se usan mayormente para avisar/advertir al Usuario de que está po Cometer una Acción Importante/Riesgosa, para dar Información, para dar un mensaje de Bienvenida o para Solicitar Permiso al Usuario
+para usar cierta Parte de la PC/Acceder a Determinada Información. Para Crear una Ventana de Alert de las Más Usadas, debemos crear un Elemento <div> con la class="alert alert-***" donde "***" va a ser el Color
+Predeterminado de Bootstrap 4 que vamos a usar; y dentro de el mismo para poder Tener una "X" en la que apretar para Cerrar la Ventana Creamos un Elemento <button type="button" class="close" data-dismiss="alert"> 
+dentro del cual irá un Elemento <span> con el Texto "&times;"(Sin las Comillas) que en HTML equivale al Ícono de una "X"; y debajo de Nuestro Elemento <button> podemos escribir el Mensaje/Texto que queramos, ya sea
+en una Etiqueta <strong>, <p>, <h1>, <h2> o el que creas Conveniente. También podemos poner un Link creando un Elemento <a href="(Poner el Link aquí)"> con la class="alert-link" para estilizarlo de acuerdo al
+ Color de la Ventana de Alerta.-->
+
+<div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-danger".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-warning">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-warning".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-secondary">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-secondary".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-dark">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-dark".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-light">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-light".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-info">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-info".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-primary">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-primary".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+<div class="alert alert-success">
+    <button type="button" class="close" data-dismiss="alert">
+        <span>&times;</span>
+    </button>
+    <strong>The Main Message will be Here.</strong>
+    Basic Example with class ".alert-success".
+    <a href="#" class="alert-link">Click on this Link</a>
+</div>
+
+<hr class="bg-dark">
+
+<h1>Default Progress Bar in Bootstrap 4:_</h1>
+<!--Las Barras de Progreso(Progress Bar) sirven principalmente para Indicarle al Usuario el Nivel de Cargado de Una Página o Contenido Multimedia(Foto/Video/Etc) en la Aplicación Web. Para Crear Una Barra de Progreso
+simplemente Creamos un Elemento <div> con la class="progress" y dentro de este otro Elemento <div> con la class="progress-bar(Para Indicar que es una barra de Progreso) w-(25/50/75/100) bg-***" donde "***" va a ser 
+el Color Predeterminado de Bootstrap 4 que vamos a usar para la barra de Progreso. En la class="... w-(25/50/75/100)" se va a Indicar solo UNO DE ESOS $ PORCENTAJES PREDETERMINADOS que va a representar el Ancho de
+Color Ocupado del Ancho Disponible Total de la Barra, y el Porcentaje Total Cargado.-->
+
+<br>
+<h4>Default Progress Bar Example with class="... w-25 bg-success":_</h4>
+<div class="progress">
+    <div class="progress-bar w-25 bg-success"></div>
+</div>
+<br>
+<h4>Default Progress Bar Example with class="... w-50 bg-secondary":_</h4>
+<div class="progress">
+    <div class="progress-bar w-50 bg-secondary"></div>
+</div>
+<br>
+<h4>Default Progress Bar Example with class="... w-75 bg-info":_</h4>
+<div class="progress">
+    <div class="progress-bar w-75 bg-info"></div>
+</div>
+<br>
+<h4>Default Progress Bar Example with class="... w-100 bg-primary":_</h4>
+<div class="progress">
+    <div class="progress-bar w-100 bg-primary"></div>
+</div>
+
+<hr class="bg-dark">
+
+<h1>Striped Progress Bar in Bootstrap 4:_</h1>
+<!--Igual que el Ejemplo Anterior, pero Rayando al Color de la Barra agregándole a nuestro Elemento <div class="progress-bar..." la class="progress-bar-striped".-->
+
+<br>
+<h4>Striped Progress Bar Example with class="... w-25 bg-success progress-bar-striped":_</h4>
+<div class="progress">
+    <div class="progress-bar w-25 bg-success progress-bar-striped"></div>
+</div>
+<br>
+<h4>Striped Progress Bar Example with class="... w-50 bg-secondary progress-bar-striped":_</h4>
+<div class="progress">
+    <div class="progress-bar w-50 bg-secondary progress-bar-striped"></div>
+</div>
+<br>
+<h4>Striped Progress Bar Example with class="... w-75 bg-info progress-bar-striped":_</h4>
+<div class="progress">
+    <div class="progress-bar w-75 bg-info progress-bar-striped"></div>
+</div>
+<br>
+<h4>Striped Progress Bar Example with class="... w-100 bg-primary progress-bar-striped":_</h4>
+<div class="progress">
+    <div class="progress-bar w-100 bg-primary progress-bar-striped"></div>
+</div>
+
+<hr class="bg-dark">
+
+<h1>Striped and Animated Progress Bar in Bootstrap 4:_</h1>
+<!--Igual que el Ejemplo Anterior, pero Rayando y animando al Color de la Barra agregándole a nuestro Elemento <div class="progress-bar..." la class="progress-bar-animated".-->
+
+<br>
+<h4>Striped and Animated Progress Bar Example with <br>class="... w-25 bg-success progress-bar-striped progress-bar-animated":_</h4>
+<div class="progress">
+    <div class="progress-bar w-25 bg-success progress-bar-striped progress-bar-animated"></div>
+</div>
+<br>
+<h4>Striped and Animated Progress Bar Example with <br>class="... w-50 bg-secondary progress-bar-striped progress-bar-animated":_</h4>
+<div class="progress">
+    <div class="progress-bar w-50 bg-secondary progress-bar-striped progress-bar-animated"></div>
+</div>
+<br>
+<h4>Striped and Animated Progress Bar Example with <br>class="... w-75 bg-info progress-bar-striped progress-bar-animated":_</h4>
+<div class="progress">
+    <div class="progress-bar w-75 bg-info progress-bar-striped progress-bar-animated"></div>
+</div>
+<br>
+<h4>Striped and Animated Progress Bar Example with <br>class="... w-100 bg-primary progress-bar-striped progress-bar-animated":_</h4>
+<div class="progress">
+    <div class="progress-bar w-100 bg-primary progress-bar-striped progress-bar-animated"></div>
+</div>
+
+<hr class="bg-dark">
+
+
+
+<!-- Si utilizamos componentes de Bootstrap que requieran Javascript agregar estos tres archivos -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
